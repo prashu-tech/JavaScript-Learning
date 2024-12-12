@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function isOdd(number) {
+      let rem = number % 2;
+      let isOdd = rem == 1;
+      return isOdd;
+    }
+
+    console.log(isOdd(3));
+    console.log(isOdd(65));
+    console.log(isOdd(23233));
+    console.log(isOdd(434));
+    console.log(isOdd(23));
+
+
+    function larger(num1, num2) {
+      if (num1 > num2) {
+        return num1;
+      } else {
+        return num2;
+      }
+    }
+
+    console.log(larger(332, 433));
+    console.log(larger(433, 525));
+    console.log(larger(233, 234));
+
+    function toFahrenheit(celsiusValue) {
+      return 9/5*celsiusValue + 32;
+    }
+
+    console.log(toFahrenheit(38));
+    console.log(toFahrenheit(0));
+    console.log(toFahrenheit(100));
+  </script>
+</body>
+</html>

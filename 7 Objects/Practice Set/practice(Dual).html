@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>dual</title>
+</head>
+
+<body>
+  <script>
+    // let Myntra = {
+    //   product: "T-shirt",
+    //   price: 500,
+    //   size: "L",
+    // };
+
+    // let obj = {
+    //   message: 'Good Job',
+    //   status: 'success',
+    // };
+    // console.log(obj);
+    // let {message, status} = obj;
+    // console.log(message);
+    // console.log(status);
+
+    //     let Myntra = {
+    //   product: "T-shirt",
+    //   price: 500,
+    //   size: "L",
+    //   'delivery-time': 'Same day delivery',
+    // };
+
+    // let obj = {
+    //   message: 'Good Job',
+    //   status: 'complete'
+    // };
+
+    // // Destructuring the object
+    // let { message, status } = obj;
+
+    // console.log(message); // Outputs: Good Job
+    // console.log(status);  // Outputs: complete
+
+    let product1 = {
+      name: "T-shirt",
+      price: 500,
+      size: "L",
+    };
+
+    let product2 = {
+      name: "Shirt",
+      price: 500,
+      size: "M",
+    };
+
+    function isIdenticalProduct(product1, product2) {
+      return product1.name === product2.name &&
+      product1.price === product2.price &&
+      product1.size === product2.size
+    }
+
+    console.log(isIdenticalProduct(product1, product2));
+    console.log(isIdenticalProduct(product1, {name: "T-shirt", price: 500, size: "L"}));
+
+  </script>
+</body>
+
+</html>

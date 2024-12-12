@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>stone paper scissor Game</h1>
+
+    <button
+      onclick="
+  // This will gererate random number between 0 and 3
+  let randomNumber = Math.random() * 3;
+  let computerChoice;
+  
+  if (randomNumber > 0 && randomNumber <= 1) {
+    computerChoice = 'stone';
+  } else if (randomNumber > 1 && randomNumber <= 2) {
+    computerChoice = 'paper';
+  } else {
+    computerChoice = 'scissor';
+  }
+  
+  let resultMsg;
+  if (computerChoice === 'stone') {
+    resultMsg =`It's a tie`;
+  } else if (computerChoice === 'paper') {
+    resultMsg = 'Computer has won';
+  } else if (computerChoice === 'scissor') {
+    resultMsg = 'User has won';
+  }
+
+  alert(`You have  chosen stone. Computer choice is ${computerChoice} and ${resultMsg}`);">stone</button>
+
+    <button
+      onclick="
+
+  randomNumber = Math.random() * 3;
+  
+  
+  if (randomNumber > 0 && randomNumber <= 1) {
+    computerChoice = 'stone';
+  } else if (randomNumber > 1 && randomNumber <= 2) {
+    computerChoice = 'paper';
+  } else {
+    computerChoice = 'scissor';
+  }
+  
+ 
+  if (computerChoice === 'stone') {
+    resultMsg =`User has won`;
+  } else if (computerChoice === 'paper') {
+    resultMsg = `It's a tie`;
+  } else if (computerChoice === 'scissor') {
+    resultMsg = 'Computer has won';
+  }
+
+  alert(`You have  chosen paper. Computer choice is ${computerChoice} and ${resultMsg}`);">paper</button>
+
+    <button onclick="randomNumber = Math.random() * 3;
+  
+  
+  if (randomNumber > 0 && randomNumber <= 1) {
+    computerChoice = 'stone';
+  } else if (randomNumber > 1 && randomNumber <= 2) {
+    computerChoice = 'paper';
+  } else {
+    computerChoice = 'scissor';
+  }
+  
+  
+
+  if (computerChoice === 'stone') {
+    resultMsg =`Computer has won`;
+  } else if (computerChoice === 'paper') {
+    resultMsg = `User has won`;
+  } else if (computerChoice === 'scissor') {
+    resultMsg = `It's a tie`;
+  }
+
+  alert(`You have  chosen scissor. Computer choice is ${computerChoice} and ${resultMsg}`);">scissor</button>
+
+  </body>
+</html>
